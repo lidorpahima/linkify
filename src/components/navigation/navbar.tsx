@@ -48,7 +48,8 @@ const Navbar = () => {
             <AnimationContainer reverse delay={0.1} className="size-full">
                 <MaxWidthWrapper className="flex items-center justify-between">
                     <div className="flex items-center space-x-12">
-                        <Link href="/#home">
+                        <Link href="/#home" className="flex items-center gap-2">
+                            <img src="/icons/logo.png" alt="Redacted" className="h-6 w-6 object-contain" />
                             <span className="text-lg font-bold font-heading !leading-none">
                                 Redacted
                             </span>

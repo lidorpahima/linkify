@@ -1,5 +1,7 @@
 import { AnimationContainer, MaxWidthWrapper, PricingCards } from "@/components";
+import { AndMoreExpandable } from "@/components/ui/and-more-expandable";
 import { BentoCard, BentoGrid, CARDS } from "@/components/ui/bento-grid";
+import { TypewriterText } from "@/components/ui/typewriter-text";
 import { BorderBeam } from "@/components/ui/border-beam";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -30,13 +32,17 @@ const HomePage = async () => {
                             <span className="backdrop absolute inset-[1px] rounded-full bg-neutral-950 transition-colors duration-200 group-hover:bg-neutral-900" />
                             <span className="h-full w-full blur-md absolute bottom-0 inset-x-0 bg-gradient-to-tr from-primary/20"></span>
                             <span className="z-10 py-0.5 text-sm text-neutral-100 flex items-center justify-center gap-1">
-                                ✨ Manage links smarter
+                                ✨ Keep your AI conversations ████████
                                 <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
                             </span>
                         </button>
                         <h1 className="text-foreground text-center py-6 text-5xl font-medium tracking-normal text-balance sm:text-6xl md:text-7xl lg:text-8xl !leading-[1.15] w-full font-heading">
-                            Smart Links with <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-bloc">
-                                Precision
+                            Redacted with<br />{" "}
+                            <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-block min-w-[2ch]">
+                                <TypewriterText
+                                    words={["Precision", "Speed", "Simplicity"]}
+                                    cursorClassName="bg-fuchsia-500"
+                                />
                             </span>
                         </h1>
                         <p className="mb-12 text-lg tracking-tight text-muted-foreground md:text-xl text-balance">
@@ -83,23 +89,26 @@ const HomePage = async () => {
                     <div className="py-14">
                         <div className="mx-auto px-4 md:px-8">
                             <h2 className="text-center text-sm font-medium font-heading text-neutral-400 uppercase">
-                                Trusted by the best in the industry
+                            Works with industry-leading AI providers
                             </h2>
                             <div className="mt-8">
                                 <ul className="flex flex-wrap items-center gap-x-6 gap-y-6 md:gap-x-16 justify-center">
                                     {COMPANIES.map((company) => (
-                                        <li key={company.name}>
+                                        <li key={company.name} className="flex items-center justify-center h-8 shrink-0">
                                             <Image
                                                 src={company.logo}
                                                 alt={company.name}
-                                                width={80}
-                                                height={80}
+                                                width={120}
+                                                height={32}
                                                 quality={100}
-                                                className="w-28 h-auto"
+                                                className="h-8 w-auto max-w-[120px] object-contain object-center brightness-0 invert"
                                             />
                                         </li>
                                     ))}
                                 </ul>
+                                <div className="mt-6 flex justify-center">
+                                    <AndMoreExpandable />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -112,10 +121,10 @@ const HomePage = async () => {
                     <div className="flex flex-col w-full items-center lg:items-center justify-center py-8">
                         <MagicBadge title="Features" />
                         <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
-                            Manage Links Like a Pro
+                            Four reasons enterprises trust us
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Redacted is a powerful link management tool that helps you shorten, track, and organize all your links in one place.
+                            We don’t just proxy requests—we protect data, enforce your rules, speed up answers, and block attacks before they reach the LLM.
                         </p>
                     </div>
                 </AnimationContainer>

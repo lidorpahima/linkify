@@ -6,27 +6,27 @@ export const PAGINATION_LIMIT = 10;
 
 export const COMPANIES = [
     {
-        name: "Asana",
+        name: "OpenAi",
         logo: "/assets/company-01.svg",
     },
     {
-        name: "Tidal",
+        name: "Gemini",
         logo: "/assets/company-02.svg",
     },
     {
-        name: "Innovaccer",
+        name: "Grok",
         logo: "/assets/company-03.svg",
     },
     {
-        name: "Linear",
+        name: "Anthropic",
         logo: "/assets/company-04.svg",
     },
     {
-        name: "Raycast",
+        name: "OpenRouter",
         logo: "/assets/company-05.svg",
     },
     {
-        name: "Labelbox",
+        name: "Perplexity",
         logo: "/assets/company-06.svg",
     }
 ] as const;
