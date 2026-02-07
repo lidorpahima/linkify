@@ -40,7 +40,7 @@ const HomePage = async () => {
                             </span>
                         </h1>
                         <p className="mb-12 text-lg tracking-tight text-muted-foreground md:text-xl text-balance">
-                            Effortlessly streamline your link management with Linkify.
+                            Effortlessly streamline your link management with Redacted.
                             <br className="hidden md:block" />
                             <span className="hidden md:block">Shorten, track, and organize all your links in one place.</span>
                         </p>
@@ -115,7 +115,7 @@ const HomePage = async () => {
                             Manage Links Like a Pro
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Linkify is a powerful link management tool that helps you shorten, track, and organize all your links in one place.
+                            Redacted is a powerful link management tool that helps you shorten, track, and organize all your links in one place.
                         </p>
                     </div>
                 </AnimationContainer>
@@ -174,7 +174,7 @@ const HomePage = async () => {
                             Choose a plan that works for you
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Get started with Linkify today and enjoy more features with our pro plans.
+                            Get started with Redacted today and enjoy more features with our pro plans.
                         </p>
                     </div>
                 </AnimationContainer>
@@ -202,7 +202,7 @@ const HomePage = async () => {
                             What our users are saying
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Here&apos;s what some of our users have to say about Linkify.
+                            Here&apos;s what some of our users have to say about Redacted.
                         </p>
                     </div>
                 </AnimationContainer>
